@@ -28,7 +28,7 @@ def lambda_handler(context,event):
         physicalString = 'All Users have Physical and Virtual MFA enabled'
     
     response = sns.publish(
-        TopicArn='arn:aws:sns:us-west-2:842337631775:MFA_Not_Enabled',
+        TopicArn='<< YOUR SNS TOPIC ARN HERE >>',
         Message= physicalString,
         Subject='Enable MFA',
     )
